@@ -1,0 +1,269 @@
+html {
+    font-family: 'Source Code Pro', monospace;
+    
+    /**Covers entire Website */
+    background: url("../img/Funloop_Front.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body {
+    margin: 0;
+}
+
+#index-spine {
+/** For the buttons: Cat and computer */
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/** ------------------------- FOR BUTTON STYLING ------------------------------ */
+
+ button {
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+
+  /** Remove default button grey rectangle */
+
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+
+/** ------------------------- FOR BUTTON STYLING ------------------------------ */
+
+
+p {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;
+
+  font-family: 'Bungee', cursive;
+
+  font-size: 48px;
+  color: black;
+  margin: 0 auto;
+}
+
+/* Animation of "Click to your heart's content */
+p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation "To your heart's  content" ; spacing of the  cursor */
+
+@keyframes animated-text{
+  from{width: 0;}
+
+  to{width: 910px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+/** ------------------------- FOR BUTTON STYLING ------------------------------ */
+
+
+
+#toggleButton {
+  width: 200px;
+  display: block;
+  margin: auto;
+  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: hsl(118, 35%, 63%);
+
+
+  padding: 10px 18px;
+  border-radius: 21px;
+  white-space: nowrap;
+  background-color: transparent;
+  background-image: radial-gradient(hsl(118, 35%, 63%) 0,hsl(118, 35%, 63%) 75%,transparent 0,transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  background-position: 50% 50%;
+  border: 1px solid hsl(118, 35%, 63%);
+  transition: 0.2s;
+  cursor: pointer;
+
+
+
+      position: absolute;
+      /** Adjust positioning using these two*/
+      top: 80%;
+      left: 80%;
+
+
+
+      /** Size of the computer/instagram button */
+
+      /** the Animation of the Cat body, up and down */
+      /**     animation-name: wave;
+          animation-iteration-count: infinite;
+          animation-duration: 6s;
+          animation-delay: 6s; */
+
+}
+
+#toggleButton:hover {
+  color: #3f673e;
+  background-size: 110% 150%;
+  cursor:  pointer;
+}
+
+
+#imageOne {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+
+    bottom: 10%;
+    left: 4%;
+    height: 840px;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+    /** the Animation of the Cat body, up and down */
+
+
+}
+/**
+	<img id ="imageTwo" src ="assets/img/flies.png"/>
+	<script>
+
+		var image2 =  document.getElementById("imageTwo");
+
+
+		document.addEventListener('keydown', function(ev) {
+
+    	if(ev.keyCode === 37){
+   	 //Left arrow
+   	 image2.src = "assets/img/light.png";
+
+   	 }
+    	else if(ev.keyCode === 39){
+    	//Right arrow
+    	image2.src = "assets/img/light.png";
+  	  }
+		});
+	</script>
+
+
+
+#imageTwo {
+
+    position: absolute;
+
+
+    top: 20%;
+    right: 30%;
+    height: auto;
+    width: auto;
+    display: block;
+
+
+} */
+
+
+
+#imageThree {
+
+    position: absolute;
+    /** Adjust positioning using these two*/
+
+    top: 50%;
+
+    height: auto;
+    width: auto;
+    display: block;
+    /** Size of the computer/instagram button */
+
+    /** the Animation of the Cat body, up and down */
+
+
+}
+
+.container {
+  background: hsl(118, 35%, 63%);
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px 30px;
+  box-shadow: 0 4px 2px 1px rgba(0,0,0,0.05);
+  position: absolute;
+  left: 60%;
+  top: 90;
+  border-radius: 30px;
+
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  text-align: center;
+  border-bottom: 1px solid black;
+  letter-spacing: 1px;
+  color: Black;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+li label {
+  width: 370px;
+  padding: 13px 0 13px 20px;
+  font-family: 'Bungee', cursive;
+    color: black;
+}
+
+li:hover {
+  background:  #a3d9b9;
+}
+
+
+
+li small {
+  font-size: 14px;
+  color: #777;
+  background: #eee;
+  padding: 2px 6px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.highlighted-badge {
+  background: #ffc368;
+  color: #855710;
+}
+
+
+

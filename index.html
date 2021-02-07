@@ -1,0 +1,116 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Elianna Ku Fun Loop</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+</head>
+<body>
+
+	<p> Lil' Bungee: the dancing Budgie</p>
+
+	<div id="audio1">
+		<audio autoplay>
+			<source src="assets/img/Flower Garden - Yoshi's Island.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+</style>
+
+
+		<main class="container">
+		<h1>Rules</h1>
+		<ul>
+			<li>
+
+				<label> Click to your heart's content!</label>
+			</li>
+			<li>
+				<label> You may click to the beat or the melody of the song </label>
+			</li>
+			<li>
+				<label> Press "a" and "d" to light up the dance floor </label>
+			</li>
+
+		</ul>
+	</main>
+
+
+
+	<div id="index-container">
+
+        <img src="images/frontpage.png" id="frontpage" alt="">
+
+
+
+		<img id ="imageThree" src ="assets/img/disco.png"/>
+
+        <script>
+            var image3 =  document.getElementById("imageThree");
+
+
+
+            document.addEventListener('keydown', function(ev) {
+
+    	if(ev.keyCode === 65){
+   	 //Left arrow
+   	 image3.src = "assets/img/disco.png";
+
+   	 }
+    	else if(ev.keyCode === 68){
+    	//Right arrow
+    	image3.src = "assets/img/disco2.png";
+  	  }
+		});
+        </script>
+
+
+	<img id ="imageOne" src ="assets/img/birb.png"/>
+
+        <script>
+            var image =  document.getElementById("imageOne");
+
+            function changeColor()
+            {
+                if (image.getAttribute('src') == "assets/img/birb.png")
+                {
+                    image.src = "assets/img/birb2.png";
+                }
+                else
+                {
+                    image.src = "assets/img/birb.png";
+                }
+            }
+        </script>
+
+
+
+
+
+		<button id="toggleButton" onclick = "changeColor()">Click! </button>
+
+
+	</div>
+		<button id="birb"><img src="assets/img/birb.png"></button>
+
+
+	<script type="text/javascript">
+		function showIt() {
+  			document.getElementById("div1").style.visibility = "visible";
+			}
+		setTimeout("showIt()", 6000); // after 1 sec
+
+	</script>
+
+
+
+
+
+
+	<script type="text/javascript" src="assets/scripts/index.js"></script>
+
+
+
+
+
+</body>
+</html>
